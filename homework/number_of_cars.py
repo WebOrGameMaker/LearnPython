@@ -1,3 +1,5 @@
+# Number of Cars needed
+# 1
 def cars_for(people):
     """
     >>> cars_for(5)
@@ -13,13 +15,14 @@ def cars_for(people):
         cars += 1
     return cars
 
-def cars_for_reversed(people):
+# 2
+def cars_for_range_reversed(people):
     """
-    >>> cars_for_reversed(5)
+    >>> cars_for_range_reversed(5)
     1
-    >>> cars_for_reversed(11)
+    >>> cars_for_range_reversed(11)
     3
-    >>> cars_for_reversed(0)
+    >>> cars_for_range_reversed(0)
     0
     """
 
@@ -28,6 +31,7 @@ def cars_for_reversed(people):
         cars += 1
     return cars
 
+# 3
 def cars_while(people):
     """
     >>> cars_while(5)
@@ -45,6 +49,7 @@ def cars_while(people):
         i += -5  # one car can have 5 people. This is how many people remain.
     return cars
 
+# 4
 def cars_math(people):
     """
     >>> cars_while(5)
@@ -55,12 +60,13 @@ def cars_math(people):
     0
     """
 
-    cars = people // 5  # find the quotient
-    remainder = people % 5  # module operator.
+    cars = people // 5  # find the quotient with remainder
+    remainder = people % 5  # module operator
     if people > 0 and remainder > 0:
         cars += 1
     return cars
 
+# 5
 def cars_divmod(people):
     """
     >>> cars_while(5)
@@ -76,6 +82,9 @@ def cars_divmod(people):
         cars += 1
     return cars
 
+# importing doctest
 if __name__ == "__main__":
     import doctest
     doctest.testmod(verbose=True)
+
+# End of code
