@@ -11,10 +11,11 @@ def multiply(lst):
     """
     o = []
     for i in range(len(lst)):
-        curr_value = lst[i]
-        temp_list = [curr_value] * len(lst)
+        temp_list = [lst[i]] * len(lst)
         o.append(temp_list)
     return o
+
+
 
 if __name__ == "__main__":
     import doctest
