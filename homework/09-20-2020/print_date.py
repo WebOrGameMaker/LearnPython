@@ -11,4 +11,4 @@ print("Yesterday was: ", yesterday)
 
 # Tomorrow's date
 tomorrow = today + timedelta(days = 1)
-print("Tomorrow is: ", tomorrow)
+print("Tomorrow will be: ", tomorrow)
