@@ -30,7 +30,7 @@ def find_alpha_strings(lst):
     """
     output = []
     for ele in lst:
-        if isinstance(ele, str) and has_letter(ele):  # type(ele) == str is another wae to tell if ele is string
+        if isinstance(ele, str) and has_letter(ele):   # type(ele) == str is another wae to tell if ele is string
             output.append(ele)
     return output
 
