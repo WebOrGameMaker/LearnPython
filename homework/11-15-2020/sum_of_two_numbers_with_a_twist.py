@@ -49,7 +49,7 @@ def hard_add2(s1, s2):
         result[0] = '' 
     return "".join(result)
 
-# My dad shortened the one above ^ to make this
+# My dad shortened the one above ^ to make this :)
 def hard_pythonic_version_by_dad(s1, s2):
     """
     >>> hard_pythonic_version_by_dad("5125515215521515", "125261616261626")
