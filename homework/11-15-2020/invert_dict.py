@@ -1,3 +1,4 @@
+# This is probably the shortest way
 def invert(d):
     """
     >>> invert({ 'z': 'q', 'w': 'f'})
