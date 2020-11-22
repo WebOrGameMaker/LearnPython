@@ -23,8 +23,6 @@ def hard_add2(s1, s2):
     """
     i = -1
     carry = 0
-    digit1 = 0
-    digit2 = 0
     result = [None] * (max(len(s1), len(s2)) + 1)
     while len(s1) >= -i or len(s2) >= -i:
         if len(s1) >= -i:
