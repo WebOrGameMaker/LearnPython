@@ -7,7 +7,7 @@ def to_dict(chr_lst):
     >>> to_dict([])
     []
     """
-    d = [] * len(chr_lst)
+    d = []
     for i in range(len(chr_lst)):
         d.append({chr_lst[i]: ord(chr_lst[i])})
     return d
