@@ -81,7 +81,7 @@ while True:
                                     break
                         if found_food is None:
                             print(f"Food/Command '{userinput3}' does not exist.")
-    if userinput == "2":
+    elif userinput == "2":
         while True:
             userinput9 = input("Food Name: ")
             name_found = False
@@ -100,3 +100,7 @@ while True:
                 items.foods.append(new_foond)
                 print(f"You've added '{userinput9}' to the foods list!")
             break
+    elif userinput == "3":
+        break
+    else:
+        print("Please choose a valid option.")
