@@ -36,6 +36,5 @@ foods = [
     Food("Organic Cheese", 2.99, 1, "pound", "Dairy"),
     Food("Neapolitan Ice Cream", 15.99, 1, "pound", "Dairy"),
     # Nothing to see here😉...
-    Food("Louis XIII Pizza with Gold Flakes on top", 13_000, 1, "item", "Easter Egg"),
-    Food("White Gold-Covered Truffles", 50_000, 1, "pound", "Easter Egg")
+    Food("White Gold-Covered Chocolate Truffles", 50_000, 1, "pound", "Easter Egg")
     ]

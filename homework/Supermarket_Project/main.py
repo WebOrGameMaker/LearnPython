@@ -26,9 +26,9 @@ while True:
             time.sleep(1)
             for food4 in items.foods:
                 if food4.category == "Easter Egg":
-                    pizza = f"\033[1;33;40m {food4.name}🍕:\n\t💲{food4.price}/{food4.weight_or_quantity} {food4.measured_in}\033[0;37;40m\n"
-                    for food_letter in pizza:
-                        sys.stdout.write(food_letter)
+                    chocolate = f"\033[1;33;40m {food4.name}🍫:\n\t💲{food4.price}/{food4.weight_or_quantity} {food4.measured_in}\033[0;37;40m\n"
+                    for chocolate_letter in chocolate:
+                        sys.stdout.write(chocolate_letter)
                         sys.stdout.flush()
                         seconds = "0." + str(randrange(1, 2, 1))
                         seconds = float(seconds)
