@@ -6,7 +6,7 @@ class Food:
         self.measured_in = measured_in
         self.category = category
 
-    def __str__(self):
+    def __str__(self): # only used once :(
         return f"{self.name}. Price: {self.price}/{self.weight_or_quantity} {self.measured_in}. "
 
 
@@ -36,5 +36,5 @@ foods = [
     Food("Organic Cheese", 2.99, 1, "pound", "Dairy"),
     Food("Neapolitan Ice Cream", 15.99, 1, "pound", "Dairy"),
     # Nothing to see here😉...
-    Food("White Gold-Covered Chocolate Truffles", 50_000, 1, "pound", "Easter Egg")
+    Food("Awesome Microsoft Python-Looking Quantum Computer", 9_999_999_999_999_999, 1, "item", "Easter Egg") # 
     ]

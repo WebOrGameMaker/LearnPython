@@ -26,7 +26,7 @@ while True:
             time.sleep(1)
             for food4 in items.foods:
                 if food4.category == "Easter Egg":
-                    chocolate = f"\033[1;33;40m {food4.name}🍫:\n\t💲{food4.price}/{food4.weight_or_quantity} {food4.measured_in}\033[0;37;40m\n"
+                    chocolate = f"\033[1;33;40m {food4.name}💻:\n\t💲{food4.price}/{food4.weight_or_quantity} {food4.measured_in}\033[0;37;40m\n"
                     for chocolate_letter in chocolate:
                         sys.stdout.write(chocolate_letter)
                         sys.stdout.flush()
@@ -42,7 +42,7 @@ while True:
                     print(food)
             if found_category == False:
                 print(f"Category '{userinput2}' does not exist.")
-            if found_category:
+            else:
                 while True:
                     userinput3 = input("Do you want to specify the food you want to see? 'exit' returns to the menu. ").lower().strip()
                     if userinput3 == "exit":
@@ -62,22 +62,22 @@ while True:
                                     break
                                 if userinput4 == "delete":
                                     items.foods.remove(found_food)
-                                    print(f"You've successfully deleted {found_food}")
+                                    print(f"You've successfully deleted {found_food.name}")
                                     break
                                 elif userinput4 == "modify":
                                     userinput5 = input("Which part of this food do you want to modify? Enter a number:\n\t(1). Name\n\t(2). Price\n\t(3). Weight/Quantity\nAnswer: ")
                                     if userinput5 == "1":
                                         userinput6 = input("Enter the new name: ")
                                         found_food.name = userinput6
-                                        print(f"You've successfully modified {found_food}'s name!")
+                                        print(f"You've successfully modified {found_food.name}'s name!")
                                     elif userinput5 == "2":
                                         userinput7 = input("Enter the new price: ")
                                         found_food.price = userinput7
-                                        print(f"You've successfully modified {found_food}'s price!")
+                                        print(f"You've successfully modified {found_food.name}'s price!")
                                     elif userinput5 == "3":
                                         userinput8 = input("Enter the new weight/quantity: ")
                                         found_food.weight_or_quantity = userinput8
-                                        print(f"You've successfully modified {found_food}'s weight/quantity!")
+                                        print(f"You've successfully modified {found_food.name}'s weight/quantity!")
                                     break
                         if found_food is None:
                             print(f"Food/Command '{userinput3}' does not exist.")
