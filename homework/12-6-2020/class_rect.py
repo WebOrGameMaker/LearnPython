@@ -1,8 +1,8 @@
 import unittest
 class Rect:
     def __init__(self, width, length, color="Red"): # arg color is optional
-        self.width = width
-        self.length = length
+        self.width = int(width)
+        self.length = int(length)
         self.color = color
     
     @property
@@ -20,7 +20,7 @@ class RectUnittest(unittest.TestCase):
         self.assertEqual(rect1.length, 3)
         self.assertEqual(rect1.perimeter, 10)
         self.assertEqual(rect1.area, 6)
-        rect1.perimeter = 3
+        self.assertEqual(rect1.color, "Turquoise")
 
 if __name__ == "__main__":
     unittest.main()

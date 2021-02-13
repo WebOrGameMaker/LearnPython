@@ -22,5 +22,7 @@ class PluralizeTest(unittest.TestCase):
         self.assertEqual(pluralize(['table', 'table', 'table']), {'tables'})
         self.assertEqual(pluralize(['chair', 'pencil', 'arm']), {'chair', 'pencil', 'arm'})
 
+
+
 if __name__ == "__main__":
     unittest.main()

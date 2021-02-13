@@ -13,9 +13,9 @@ morse_letters = {
 def encode_morse(sentence):
     """
     >>> encode_morse("EDABBIT CHALLENGE")
-    '. -.. .- -... -... .. -   -.-. .... .- .-.. .-.. . -. --. .'
+    '.-...--...-.....- -.-......-.-...-...-.--..'
     >>> encode_morse("HELP ME!")
-    '.... . .-.. .--.   -- .   -.-.--'
+    '......-...--. --.-.-.--'
     """
     morse_sentence = ""
     for char in sentence.upper():
