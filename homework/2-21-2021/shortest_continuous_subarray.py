@@ -4,6 +4,8 @@ def shortest_continuous_subarray(nums):
     2
     >>> shortest_continuous_subarray([1,2,2,3,1,4,2])
     6
+    >>> shortest_continuous_subarray([8,4,3,2,1,8,3,2,1,8,9])
+    10
     """
     mode = 0
     for num in nums:
@@ -12,14 +14,10 @@ def shortest_continuous_subarray(nums):
     for i in range(len(nums)):
         if nums[i] == mode:
             break
-        else:
-            nums.pop(i)
-    for i in range(len(nums)-1, -1, -1): # the stop can't be -1, so it becomes 0
-        if nums[i] == mode:
+    for j in range(len(nums)-1, -1, -1): # the stop can't be -1, so it becomes 0
+        if nums[j] == mode:
             break
-        else:
-            nums.pop(i)
-    return len(nums)
+    return j - i + 1
 
 # Time Complexity: O(n^2)
 
