@@ -26,14 +26,14 @@ while True:
             time.sleep(1)
             for food4 in items.foods:
                 if food4.category == "Easter Egg":
-                    chocolate = f"\033[1;33;40m {food4.name}💻:\n\t💲{food4.price}/{food4.weight_or_quantity} {food4.measured_in}\033[0;37;40m\n"
-                    for chocolate_letter in chocolate:
-                        sys.stdout.write(chocolate_letter)
+                    quantum_comptuer = f"\033[1;33;40m {food4.name}💻:\n\t💲{food4.price}/{food4.weight_or_quantity} {food4.measured_in}\033[0;37;40m\n"
+                    for letter in quantum_comptuer:
+                        sys.stdout.write(letter)
                         sys.stdout.flush()
                         seconds = "0." + str(randrange(1, 2, 1))
                         seconds = float(seconds)
                         time.sleep(seconds)
-            print("Have a Happy New Year!")
+            print("Hope 2021 is better than 2020!")
         else:
             found_category = False
             for food in items.foods:
