@@ -8,7 +8,7 @@ def third_largest(nums):
     first = nums[0]
     second = nums[0]
     third = nums[0]
-    if len(nums) > 3:
+    if len(nums) > 3: # TODO: if len(nums) >= 3 or len nums > 2:
         for num in nums:
             if num > first:
                 first, second, third = num, first, second
@@ -18,7 +18,7 @@ def third_largest(nums):
                 third = num
         return third
     else:
-        return first
+        return first # TODO: return max(nums)
 
 if __name__ == '__main__':
     import doctest

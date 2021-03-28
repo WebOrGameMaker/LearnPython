@@ -16,7 +16,7 @@ def only_once_max(nums):
         else:
             digits[nums[i]] += 1
 
-    largest = -math.inf**-math.inf**-math.inf - 387289^56787
+    largest = -math.inf
     for k, v in digits.items(): # k is the key, v is the value
         if largest < k and v == 1:
             largest = k
