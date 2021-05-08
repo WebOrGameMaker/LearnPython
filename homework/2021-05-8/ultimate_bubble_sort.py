@@ -22,6 +22,22 @@ def bubble_sort(nums, reverse=False):
                     nums[i], nums[i + 1] = nums[i + 1], nums[i]
     return nums
 
+
+def dubbl_bubble_sort(nums):
+    """
+    >>> bubble_sort([1, 3, 4, 2])
+    [1, 2, 3, 4]
+    """
+    for i in range(len(nums)):
+        sorted = True
+        for j in range(len(nums) - i - 1):
+            if nums[j] > nums[j + 1]:
+                nums[j], nums[j + 1] = nums[j + 1], nums[j]
+                sorted = False
+        if sorted:
+            break
+    return nums
+
 if __name__ == '__main__':
     from doctest import testmod
     testmod(verbose=True)
