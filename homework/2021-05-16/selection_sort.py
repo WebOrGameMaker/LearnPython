@@ -1,5 +1,3 @@
-
-
 def selection_sort(nums):
     """
     >>> selection_sort([1, 3, 5, 7, 9, 2, 4, 6, 8, 10])
@@ -10,10 +8,7 @@ def selection_sort(nums):
         for j in range(i + 1, len(nums)):
             if nums[j] < nums[minimum]:
                 minimum = j
-
-        # Remember, this is still in the 1st for loop, so it continually switches.
-        if minimum != i:
-            nums[minimum], nums[i] = nums[i], nums[minimum]
+        nums[minimum], nums[i] = nums[i], nums[minimum]
     return nums
 
 if __name__ == '__main__':
