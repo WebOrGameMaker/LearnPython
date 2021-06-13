@@ -1,7 +1,7 @@
 def editor(list_string):
     editing_thing = []
     for i in range(len(list_string)):
-        if list_string[i] == '#':
+        if list_string[i] == '#': # if list_string and list_string[i] == '#':
             if len(editing_thing) > 0:
                 editing_thing.pop()
         else:
